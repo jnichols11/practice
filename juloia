@@ -1,0 +1,27 @@
+#include <fstream>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+  string lastName = "", firstName =  "", studentID = "";
+ 
+  cout << "Enter last name: ";
+  cin >> lastName;
+  cout << "Enter first name:";
+  cin>> firstName
+  cout << "Enter student ID: ";
+  cin >> studentID;
+  
+  ofstream outFile;
+  outfile.open("studentInfo.txt", ios: :app);
+  
+  outFile << "Name: " <<firstName<< " " <<lastName<< end1;
+  outFile <<"studentID: " << studentID << end1;
+  outfile.close();
+  
+  cout <<("Done! Data is saved in file studentinfo.txt");
+  return 0;
+}
